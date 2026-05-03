@@ -1,0 +1,28 @@
+# Android
+app/build/
+app/release/
+*.apk
+*.aab
+*.jks
+*.keystore
+local.properties
+
+# IDE
+.idea/
+.gradle/
+*.iml
+.vscode/
+
+# Logs
+*.log
+*.err
+*.txt
+
+# App Source
+app/
+gradle/
+build.gradle.kts
+settings.gradle.kts
+gradle.properties
+gradlew
+gradlew.bat
