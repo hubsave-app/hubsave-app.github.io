@@ -1,207 +1,95 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6047567977712893" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>المدونة - HubSave</title>
-  <meta name="description" content="أحدث المقالات والنصائح حول صناعة المحتوى وتحميل الفيديوهات من تيك توك" />
+  <title>المدونة - HubSave | أدلة تحميل الفيديوهات من جميع المنصات</title>
+  <meta name="description" content="أدلة شاملة لتحميل الفيديوهات من تيك توك، فيسبوك، إنستغرام، يوتيوب، تويتر وأكثر باستخدام HubSave" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
-
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --black: #000000;
-      --dark: #0a0a0a;
-      --card: #111111;
-      --border: #1e1e1e;
-      --accent: #fe2c55;
-      --accent2: #25f4ee;
-      --text: #ffffff;
-      --muted: #888888;
-      --font: 'Tajawal', sans-serif;
-    }
-    body {
-      background: var(--black);
-      color: var(--text);
-      font-family: var(--font);
-      line-height: 1.7;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      backdrop-filter: blur(20px);
-      background: rgba(0,0,0,0.7);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo {
-      display: flex; align-items: center; gap: .6rem;
-      font-size: 1.3rem; font-weight: 800; text-decoration: none; color: var(--text);
-    }
-    .nav-logo .logo-icon {
-      width: 36px; height: 36px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
-    }
-    .nav-links { display: flex; gap: 1.5rem; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-size: .95rem; transition: color .2s; }
-    .nav-links a:hover { color: var(--text); }
-    
-    .blog-header {
-      padding: 8rem 2rem 4rem;
-      text-align: center;
-      background: radial-gradient(ellipse 60% 60% at 50% 0%, rgba(37,244,238,.1) 0%, transparent 70%);
-    }
-    .blog-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .blog-header p { color: var(--muted); font-size: 1.1rem; }
-
-    .articles-grid {
-      max-width: 1100px;
-      margin: 0 auto 5rem;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .article-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.5rem;
-      transition: transform .3s, border-color .3s;
-      text-decoration: none;
-      display: block;
-    }
-    .article-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(254,44,85,.5);
-    }
-    .article-tag {
-      display: inline-block;
-      background: rgba(254,44,85,.15);
-      color: var(--accent);
-      padding: .2rem .8rem;
-      border-radius: 100px;
-      font-size: .8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .article-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: .8rem;
-      line-height: 1.4;
-    }
-    .article-desc {
-      color: var(--muted);
-      font-size: .95rem;
-      margin-bottom: 1.5rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .article-meta {
-      display: flex;
-      justify-content: space-between;
-      color: var(--muted);
-      font-size: .85rem;
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: .88rem;
-    }
-    footer a { color: var(--muted); text-decoration: none; transition: color .2s; }
-    footer a:hover { color: var(--text); }
-    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-top: .8rem; }
-    
-    @media (max-width: 600px) { .nav-links { display: none; } }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--black:#000;--card:#111;--border:#1e1e1e;--accent:#fe2c55;--accent2:#25f4ee;--text:#fff;--muted:#888;--font:'Tajawal',sans-serif}body{background:var(--black);color:var(--text);font-family:var(--font);line-height:1.7}nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;backdrop-filter:blur(20px);background:rgba(0,0,0,.7);border-bottom:1px solid var(--border)}.nav-logo{display:flex;align-items:center;gap:.6rem;font-size:1.3rem;font-weight:800;text-decoration:none;color:var(--text)}.nav-logo .logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}.nav-links{display:flex;gap:1.5rem}.nav-links a{color:var(--muted);text-decoration:none;font-size:.95rem;transition:color .2s}.nav-links a:hover{color:var(--text)}.blog-header{padding:8rem 2rem 4rem;text-align:center;background:radial-gradient(ellipse 60% 60% at 50% 0%,rgba(37,244,238,.1) 0%,transparent 70%)}.blog-header h1{font-size:2.5rem;margin-bottom:1rem}.blog-header p{color:var(--muted);font-size:1.1rem}.articles-grid{max-width:1100px;margin:0 auto 3rem;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}.article-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;transition:transform .3s,border-color .3s;text-decoration:none;display:block}.article-card:hover{transform:translateY(-5px);border-color:rgba(254,44,85,.5)}.article-tag{display:inline-block;padding:.2rem .8rem;border-radius:100px;font-size:.8rem;font-weight:700;margin-bottom:1rem}.tag-tiktok{background:rgba(254,44,85,.15);color:var(--accent)}.tag-facebook{background:rgba(66,103,178,.2);color:#4267B2}.tag-instagram{background:rgba(225,48,108,.2);color:#E1306C}.tag-youtube{background:rgba(255,0,0,.15);color:#FF0000}.tag-twitter{background:rgba(29,161,242,.15);color:#1DA1F2}.tag-general{background:rgba(37,244,238,.1);color:var(--accent2)}.article-title{font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:.8rem;line-height:1.4}.article-desc{color:var(--muted);font-size:.95rem;margin-bottom:1.5rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.article-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:1rem}.ad-space{background:var(--card);border:1px dashed rgba(255,255,255,.1);border-radius:16px;padding:1rem;text-align:center;max-width:900px;margin:2rem auto;min-height:100px;overflow:hidden}.ad-space-label{font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}footer{border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center;color:var(--muted);font-size:.88rem}footer a{color:var(--muted);text-decoration:none;transition:color .2s}footer a:hover{color:var(--text)}.footer-links{display:flex;gap:1.5rem;justify-content:center;margin-top:.8rem}@media(max-width:600px){.nav-links{display:none}}
   </style>
 </head>
 <body>
-
   <nav>
-    <a href="index.html" class="nav-logo">
-      <div class="logo-icon">⬇️</div>
-      HubSave
-    </a>
-    <a href="en/index.html" style="margin-left:auto; margin-right:1rem; border:1px solid #fe2c55; padding:0.3rem 0.8rem; border-radius:8px; color:#fff; text-decoration:none;">English</a>
-    <div class="nav-links">
-      <a href="index.html">الرئيسية</a>
-      <a href="blog.html" style="color: var(--text)">المدونة</a>
-      <a href="contact.html">اتصل بنا</a>
-    </div>
+    <a href="index.html" class="nav-logo"><div class="logo-icon">⬇️</div>HubSave</a>
+    <a href="en/index.html" style="margin-left:auto;margin-right:1rem;border:1px solid #fe2c55;padding:.3rem .8rem;border-radius:8px;color:#fff;text-decoration:none">English</a>
+    <div class="nav-links"><a href="index.html">الرئيسية</a><a href="blog.html" style="color:var(--text)">المدونة</a><a href="contact.html">اتصل بنا</a></div>
   </nav>
 
   <header class="blog-header">
     <h1>مدونة HubSave</h1>
-    <p>دليلك الشامل لصناعة المحتوى، تحميل الفيديوهات، وأسرار تيك توك</p>
+    <p>أدلة شاملة لتحميل الفيديوهات من جميع المنصات — تيك توك، فيسبوك، إنستغرام، يوتيوب، تويتر</p>
   </header>
 
+  <div class="ad-space"><div class="ad-space-label">إعلان مدعوم</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6047567977712893" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
   <div class="articles-grid">
-    <!-- Article 1 -->
+    <a href="article-tiktok.html" class="article-card">
+      <div class="article-tag tag-tiktok">تيك توك</div>
+      <h2 class="article-title">كيف تحمل فيديوهات من تيك توك بدون علامة مائية</h2>
+      <p class="article-desc">دليل شامل خطوة بخطوة لنسخ رابط فيديو تيك توك وتحميله بجودة HD بدون أي علامة مائية باستخدام HubSave.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
+    </a>
+
+    <a href="article-facebook.html" class="article-card">
+      <div class="article-tag tag-facebook">فيسبوك</div>
+      <h2 class="article-title">كيف تحمل مقاطع فيديو من فيسبوك</h2>
+      <p class="article-desc">تعلم كيفية نسخ رابط الفيديو من فيسبوك وتحميله بجودة عالية مع شرح مفصل لكل خطوة.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
+    </a>
+
+    <a href="article-instagram.html" class="article-card">
+      <div class="article-tag tag-instagram">إنستغرام</div>
+      <h2 class="article-title">كيف تحمل فيديوهات وريلز من إنستغرام</h2>
+      <p class="article-desc">دليل تحميل الريلز والفيديوهات من إنستغرام — كيف تنسخ الرابط وتحمل المحتوى بسهولة.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
+    </a>
+
+    <a href="article-youtube.html" class="article-card">
+      <div class="article-tag tag-youtube">يوتيوب</div>
+      <h2 class="article-title">كيف تحمل فيديوهات من يوتيوب</h2>
+      <p class="article-desc">شرح كيفية تحميل فيديوهات يوتيوب و YouTube Shorts بجودة عالية وبأسهل طريقة.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
+    </a>
+
+    <a href="article-twitter.html" class="article-card">
+      <div class="article-tag tag-twitter">تويتر X</div>
+      <h2 class="article-title">كيف تحمل فيديوهات من تويتر (X)</h2>
+      <p class="article-desc">دليل تحميل فيديوهات تويتر — كيف تنسخ رابط التغريدة وتحمل الفيديو بخطوات سهلة.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
+    </a>
+
     <a href="article-1.html" class="article-card">
-      <div class="article-tag">شروحات</div>
-      <h2 class="article-title">الدليل الشامل: كيف تحمل فيديوهات تيك توك بدون علامة مائية للاندرويد؟</h2>
-      <p class="article-desc">العلامة المائية المزعجة في تيك توك قد تفسد جمال الفيديو. في هذا المقال، سنشرح لك بالتفصيل كيفية إزالتها وتحميل الفيديوهات بجودة عالية مجاناً.</p>
-      <div class="article-meta">
-        <span>بقلم: فريق HubSave</span>
-        <span>اقرأ المزيد ←</span>
-      </div>
+      <div class="article-tag tag-general">شروحات عامة</div>
+      <h2 class="article-title">الدليل الشامل: تحميل الفيديوهات بدون علامة مائية</h2>
+      <p class="article-desc">كل ما تحتاج معرفته عن تحميل الفيديوهات بجودة عالية بدون علامة مائية من أي منصة.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
     </a>
 
-    <!-- Article 2 -->
     <a href="article-2.html" class="article-card">
-      <div class="article-tag">صناعة المحتوى</div>
-      <h2 class="article-title">أفضل 5 أفكار لصناعة محتوى تيك توك ناجح في 2025</h2>
-      <p class="article-desc">هل تبحث عن زيادة متابعيك؟ اكتشف أفضل الاستراتيجيات والأفكار التي ستساعدك على تصدر التريند والحصول على ملايين المشاهدات.</p>
-      <div class="article-meta">
-        <span>بقلم: فريق HubSave</span>
-        <span>اقرأ المزيد ←</span>
-      </div>
+      <div class="article-tag tag-general">صناعة المحتوى</div>
+      <h2 class="article-title">أفضل 5 أفكار لصناعة محتوى فيديو ناجح</h2>
+      <p class="article-desc">استراتيجيات فعالة لزيادة المتابعين والمشاهدات على منصات التواصل الاجتماعي.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
     </a>
 
-    <!-- Article 3 -->
     <a href="article-3.html" class="article-card">
-      <div class="article-tag">نصائح تقنية</div>
-      <h2 class="article-title">كيف تستخدم الفيديوهات المحملة في المونتاج (CapCut) لعمل رياكشن؟</h2>
-      <p class="article-desc">العديد من صناع المحتوى يعتمدون على فيديوهات الآخرين لعمل ردود فعل (Reaction). تعرف على الطرق القانونية والصحيحة لتعديل هذه الفيديوهات.</p>
-      <div class="article-meta">
-        <span>بقلم: فريق HubSave</span>
-        <span>اقرأ المزيد ←</span>
-      </div>
+      <div class="article-tag tag-general">نصائح تقنية</div>
+      <h2 class="article-title">كيف تستخدم الفيديوهات في المونتاج (CapCut)</h2>
+      <p class="article-desc">طرق قانونية وصحيحة لتعديل الفيديوهات وعمل ردود فعل (Reaction) باحترافية.</p>
+      <div class="article-meta"><span>فريق HubSave</span><span>اقرأ المزيد ←</span></div>
     </a>
   </div>
 
+  <div class="ad-space"><div class="ad-space-label">إعلان مدعوم</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6047567977712893" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
   <footer>
     <div>© 2026 HubSave. جميع الحقوق محفوظة.</div>
-    <div class="footer-links">
-      <a href="privacy.html">سياسة الخصوصية</a>
-      <a href="terms.html">شروط الاستخدام</a>
-      <a href="contact.html">اتصل بنا</a>
-    </div>
+    <div class="footer-links"><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="contact.html">اتصل بنا</a></div>
   </footer>
-
 </body>
 </html>
-
-
-
-
-
-

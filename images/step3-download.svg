@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="100%" height="100%">
+  <rect width="400" height="800" fill="#0a0a0a" rx="20"/>
+  
+  <!-- App Header -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fe2c55;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b25f4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="400" height="220" fill="url(#grad1)" rx="20"/>
+  <text x="360" y="100" fill="#fff" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="end">HubSave</text>
+  
+  <!-- Paste Card (Minimized) -->
+  <rect x="20" y="140" width="360" height="80" fill="#111" rx="20" stroke="#1e1e1e" stroke-width="2"/>
+  <rect x="40" y="155" width="320" height="50" fill="#1a1a1a" rx="10"/>
+  <text x="340" y="185" fill="#fff" font-family="Arial, sans-serif" font-size="16" text-anchor="end">https://example.com/...</text>
+  
+  <!-- Download Card -->
+  <rect x="20" y="240" width="360" height="360" fill="#111" rx="20" stroke="#1e1e1e" stroke-width="2"/>
+  
+  <!-- Video Info -->
+  <rect x="240" y="270" width="100" height="120" fill="#333" rx="12"/> <!-- Generic Thumbnail -->
+  <circle cx="290" cy="330" r="18" fill="#fff" opacity="0.8"/>
+  <polygon points="285,320 285,340 300,330" fill="#333"/>
+  
+  <text x="220" y="300" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="end">عنوان الفيديو هنا</text>
+  <text x="220" y="330" fill="#888" font-family="Arial, sans-serif" font-size="14" text-anchor="end">@username</text>
+  
+  <!-- Download Buttons -->
+  <rect x="40" y="420" width="320" height="65" fill="#fe2c55" rx="15"/>
+  <text x="200" y="460" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">تحميل الفيديو</text>
+  
+  <rect x="40" y="505" width="320" height="65" fill="#25f4ee" rx="15"/>
+  <text x="200" y="545" fill="#000" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">تحميل الصوت (MP3)</text>
+  
+  <!-- Pointer on Video Download -->
+  <path d="M220 480 l-5 -15 l-10 10 l3 18 z" fill="#fff" stroke="#000" stroke-width="1"/>
+</svg>

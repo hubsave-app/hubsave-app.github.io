@@ -1,22 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="t5xB3FEJpTlwWBi1sgYfu8ll77hy1BoODbdXma2-JuW" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HubSave - Download TikTok Videos Without Watermark</title>
-  <meta name="description" content="HubSave - Best app to download TikTok videos in high quality without watermark. Download now for free on Android." />
-  <meta name="keywords" content="تحميل TikTok, TikTok Without Watermark, TikTok downloader, تحميل فيديو TikTok, HubSave" />
-  <meta property="og:title" content="HubSave - Download TikTok Without Watermark" />
-  <meta property="og:description" content="Download Videos TikTok بHigh Quality Without Watermark مجاناً" />
+  <title>HubSave - Download Videos Without Watermark</title>
+  <meta name="description" content="HubSave - Best app to download social media videos in high quality without watermark. Download now for free on Android." />
+  <meta name="keywords" content="Download Videos, Video Without Watermark, Video downloader, Download video, HubSave" />
+  <meta property="og:title" content="HubSave - Download Videos Without Watermark" />
+  <meta property="og:description" content="Download Your Favorite Videos in High Quality Without Watermark for free" />
   <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
-
-  <!-- ✅ Google Analytics 4 - إحصائيات الزوار -->
-  <!-- استبدل G-GQDR2VD7MQ بـ Measurement ID من Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQDR2VD7MQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,670 +21,192 @@
     gtag('js', new Date());
     gtag('config', 'G-GQDR2VD7MQ');
   </script>
-
-  <!-- ✅ Google AdSense - إعلانات حقيقية -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6047567977712893" crossorigin="anonymous"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --black: #000000;
-      --dark: #0a0a0a;
-      --card: #111111;
-      --border: #1e1e1e;
-      --accent: #fe2c55;
-      --accent2: #25f4ee;
-      --text: #ffffff;
-      --muted: #888888;
+      --black: #000000; --dark: #0a0a0a; --card: #111111; --border: #1e1e1e;
+      --accent: #fe2c55; --accent2: #25f4ee; --text: #ffffff; --muted: #888888;
       --font: 'Inter', sans-serif;
     }
-
     html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--black);
-      color: var(--text);
-      font-family: var(--font);
-      overflow-x: hidden;
-      line-height: 1.7;
-    }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      backdrop-filter: blur(20px);
-      background: rgba(0,0,0,0.7);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: .6rem;
-      font-size: 1.3rem;
-      font-weight: 800;
-      text-decoration: none;
-      color: var(--text);
-    }
-    .nav-logo .logo-icon {
-      width: 36px; height: 36px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-    }
+    body { background: var(--black); color: var(--text); font-family: var(--font); overflow-x: hidden; line-height: 1.7; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; backdrop-filter: blur(20px); background: rgba(0,0,0,0.7); border-bottom: 1px solid var(--border); }
+    .nav-logo { display: flex; align-items: center; gap: .6rem; font-size: 1.3rem; font-weight: 800; text-decoration: none; color: var(--text); }
+    .nav-logo .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--accent), var(--accent2)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
     .nav-links { display: flex; gap: 1.5rem; }
-    .nav-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: .95rem;
-      transition: color .2s;
-    }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: .95rem; transition: color .2s; }
     .nav-links a:hover { color: var(--text); }
-    .nav-cta {
-      background: var(--accent);
-      color: #fff !important;
-      padding: .45rem 1.2rem;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: opacity .2s !important;
-    }
+    .nav-cta { background: var(--accent); color: #fff !important; padding: .45rem 1.2rem; border-radius: 8px; font-weight: 700; transition: opacity .2s !important; }
     .nav-cta:hover { opacity: .85; }
-
-    /* ── HERO ── */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-      padding: 8rem 1.5rem 4rem;
-      overflow: hidden;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(254,44,85,.18) 0%, transparent 70%),
-                  radial-gradient(ellipse 60% 50% at 80% 80%, rgba(37,244,238,.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; padding: 8rem 1.5rem 4rem; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(254,44,85,.18) 0%, transparent 70%), radial-gradient(ellipse 60% 50% at 80% 80%, rgba(37,244,238,.12) 0%, transparent 70%); pointer-events: none; }
     .hero-content { position: relative; z-index: 1; max-width: 740px; }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: rgba(254,44,85,.12);
-      border: 1px solid rgba(254,44,85,.3);
-      border-radius: 100px;
-      padding: .35rem 1rem;
-      font-size: .85rem;
-      color: var(--accent);
-      margin-bottom: 1.8rem;
-      animation: fadeDown .6s ease both;
-    }
-    .hero h1 {
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      font-weight: 900;
-      line-height: 1.2;
-      margin-bottom: 1.2rem;
-      animation: fadeDown .7s .1s ease both;
-    }
-    .hero h1 span {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero-sub {
-      font-size: 1.15rem;
-      color: var(--muted);
-      margin-bottom: 2.5rem;
-      animation: fadeDown .7s .2s ease both;
-    }
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      animation: fadeDown .7s .3s ease both;
-    }
-    .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: .6rem;
-      background: linear-gradient(135deg, var(--accent), #c8002c);
-      color: #fff;
-      text-decoration: none;
-      padding: .9rem 2rem;
-      border-radius: 12px;
-      font-size: 1.05rem;
-      font-weight: 700;
-      font-family: var(--font);
-      transition: transform .2s, box-shadow .2s;
-      box-shadow: 0 4px 24px rgba(254,44,85,.4);
-    }
+    .hero-badge { display: inline-flex; align-items: center; gap: .5rem; background: rgba(254,44,85,.12); border: 1px solid rgba(254,44,85,.3); border-radius: 100px; padding: .35rem 1rem; font-size: .85rem; color: var(--accent); margin-bottom: 1.8rem; animation: fadeDown .6s ease both; }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 900; line-height: 1.2; margin-bottom: 1.2rem; animation: fadeDown .7s .1s ease both; }
+    .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-sub { font-size: 1.15rem; color: var(--muted); margin-bottom: 2.5rem; animation: fadeDown .7s .2s ease both; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeDown .7s .3s ease both; }
+    .btn-primary { display: inline-flex; align-items: center; gap: .6rem; background: linear-gradient(135deg, var(--accent), #c8002c); color: #fff; text-decoration: none; padding: .9rem 2rem; border-radius: 12px; font-size: 1.05rem; font-weight: 700; font-family: var(--font); transition: transform .2s, box-shadow .2s; box-shadow: 0 4px 24px rgba(254,44,85,.4); }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(254,44,85,.5); }
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: .6rem;
-      background: transparent;
-      color: var(--text);
-      text-decoration: none;
-      padding: .9rem 2rem;
-      border-radius: 12px;
-      font-size: 1.05rem;
-      font-weight: 600;
-      font-family: var(--font);
-      border: 1px solid var(--border);
-      transition: border-color .2s, background .2s;
-    }
+    .btn-secondary { display: inline-flex; align-items: center; gap: .6rem; background: transparent; color: var(--text); text-decoration: none; padding: .9rem 2rem; border-radius: 12px; font-size: 1.05rem; font-weight: 600; font-family: var(--font); border: 1px solid var(--border); transition: border-color .2s, background .2s; }
     .btn-secondary:hover { border-color: var(--muted); background: rgba(255,255,255,.04); }
-
-    /* ── MOCKUP PHONE ── */
-    .hero-phone {
-      margin-top: 3.5rem;
-      animation: fadeUp .8s .4s ease both;
-    }
-    .phone-frame {
-      width: 220px;
-      height: 440px;
-      background: var(--card);
-      border-radius: 36px;
-      border: 2px solid var(--border);
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 30px 80px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.05);
-    }
-    .phone-notch {
-      width: 80px; height: 24px;
-      background: var(--black);
-      border-radius: 0 0 16px 16px;
-      position: absolute;
-      top: 0; left: 50%; transform: translateX(-50%);
-      z-index: 2;
-    }
-    .phone-screen {
-      width: 100%; height: 100%;
-      display: flex;
-      flex-direction: column;
-      padding: 36px 12px 12px;
-      gap: 10px;
-    }
-    .phone-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 4px;
-    }
+    .hero-phone { margin-top: 3.5rem; animation: fadeUp .8s .4s ease both; }
+    .phone-frame { width: 220px; height: 440px; background: var(--card); border-radius: 36px; border: 2px solid var(--border); margin: 0 auto; position: relative; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.05); }
+    .phone-notch { width: 80px; height: 24px; background: var(--black); border-radius: 0 0 16px 16px; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 2; }
+    .phone-screen { width: 100%; height: 100%; display: flex; flex-direction: column; padding: 36px 12px 12px; gap: 10px; }
+    .phone-header { display: flex; align-items: center; justify-content: space-between; padding: 0 4px; }
     .phone-logo { font-size: .75rem; font-weight: 800; color: var(--accent); }
     .phone-icon { width: 24px; height: 24px; background: var(--border); border-radius: 8px; }
-    .phone-input {
-      background: rgba(255,255,255,.05);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px 10px;
-      font-size: .65rem;
-      color: var(--muted);
-      font-family: var(--font);
-    }
-    .phone-btn {
-      background: linear-gradient(135deg, var(--accent), #c8002c);
-      border-radius: 10px;
-      padding: 8px;
-      text-align: center;
-      font-size: .7rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .phone-video {
-      flex: 1;
-      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .phone-video::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent, rgba(254,44,85,.1));
-    }
-    .phone-tabs {
-      display: flex;
-      justify-content: space-around;
-      padding: 4px 0;
-    }
+    .phone-input { background: rgba(255,255,255,.05); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; font-size: .65rem; color: var(--muted); font-family: var(--font); }
+    .phone-btn { background: linear-gradient(135deg, var(--accent), #c8002c); border-radius: 10px; padding: 8px; text-align: center; font-size: .7rem; font-weight: 700; color: #fff; }
+    .phone-video { flex: 1; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem; position: relative; overflow: hidden; }
+    .phone-video::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, rgba(254,44,85,.1)); }
+    .phone-tabs { display: flex; justify-content: space-around; padding: 4px 0; }
     .phone-tab { font-size: .55rem; color: var(--muted); text-align: center; }
     .phone-tab.active { color: var(--accent); }
-
-    /* ── FEATURES ── */
-    .section {
-      padding: 6rem 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .section-label {
-      display: inline-block;
-      background: rgba(37,244,238,.1);
-      border: 1px solid rgba(37,244,238,.25);
-      color: var(--accent2);
-      border-radius: 100px;
-      padding: .3rem .9rem;
-      font-size: .8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-    .section-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 900;
-      margin-bottom: 1rem;
-    }
-    .section-sub {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 550px;
-      margin-bottom: 3rem;
-    }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.2rem;
-    }
-    .feature-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 1.8rem;
-      transition: border-color .3s, transform .3s;
-    }
-    .feature-card:hover {
-      border-color: rgba(254,44,85,.4);
-      transform: translateY(-4px);
-    }
-    .feature-icon {
-      width: 52px; height: 52px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.2rem;
-    }
-    .fi-red { background: rgba(254,44,85,.12); }
-    .fi-cyan { background: rgba(37,244,238,.1); }
-    .fi-purple { background: rgba(168,85,247,.1); }
-    .fi-green { background: rgba(34,197,94,.1); }
+    .section { padding: 6rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-label { display: inline-block; background: rgba(37,244,238,.1); border: 1px solid rgba(37,244,238,.25); color: var(--accent2); border-radius: 100px; padding: .3rem .9rem; font-size: .8rem; font-weight: 700; margin-bottom: 1rem; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 1rem; }
+    .section-sub { color: var(--muted); font-size: 1.05rem; max-width: 550px; margin-bottom: 3rem; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
+    .feature-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 1.8rem; transition: border-color .3s, transform .3s; }
+    .feature-card:hover { border-color: rgba(254,44,85,.4); transform: translateY(-4px); }
+    .feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.2rem; }
+    .fi-red { background: rgba(254,44,85,.12); } .fi-cyan { background: rgba(37,244,238,.1); } .fi-purple { background: rgba(168,85,247,.1); } .fi-green { background: rgba(34,197,94,.1); }
     .feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
     .feature-card p { color: var(--muted); font-size: .9rem; }
-
-    /* ── STATS ── */
-    .stats-section {
-      background: var(--card);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 4rem 1.5rem;
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .stat-num {
-      font-size: 2.4rem;
-      font-weight: 900;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    .stats-section { background: var(--card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 1.5rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto; text-align: center; }
+    .stat-num { font-size: 2.4rem; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .stat-label { color: var(--muted); font-size: .9rem; margin-top: .3rem; }
-
-    /* ── HOW IT WORKS ── */
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-    .step-card {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      transition: transform .3s;
-    }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .step-card { text-align: center; padding: 2rem 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: 20px; transition: transform .3s; }
     .step-card:hover { transform: translateY(-4px); }
-    .step-num {
-      width: 56px; height: 56px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), #c8002c);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin: 0 auto 1.2rem;
-      box-shadow: 0 4px 20px rgba(254,44,85,.4);
-    }
+    .step-num { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #c8002c); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 900; margin: 0 auto 1.2rem; box-shadow: 0 4px 20px rgba(254,44,85,.4); }
     .step-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
     .step-card p { color: var(--muted); font-size: .88rem; }
-
-    /* ── CTA ── */
-    .cta-section {
-      padding: 6rem 1.5rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-bg {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(254,44,85,.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
+    .cta-section { padding: 6rem 1.5rem; text-align: center; position: relative; overflow: hidden; }
+    .cta-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(254,44,85,.1) 0%, transparent 70%); pointer-events: none; }
     .cta-section h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 1rem; }
     .cta-section p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; }
-
-    /* ── AD SPACE ── */
-    .ad-space {
-      background: var(--card);
-      border: 1px dashed rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 1rem;
-      text-align: center;
-      max-width: 900px;
-      margin: 3rem auto;
-      min-height: 120px;
-      overflow: hidden;
-    }
-    .ad-space-label {
-      font-size: .65rem;
-      color: var(--muted);
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      margin-bottom: .5rem;
-    }
-
-    /* ── VERSION BADGE ── */
-    .version-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      background: rgba(37,244,238,.08);
-      border: 1px solid rgba(37,244,238,.2);
-      color: var(--accent2);
-      border-radius: 100px;
-      padding: .3rem .9rem;
-      font-size: .8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      color: var(--muted);
-      font-size: .88rem;
-    }
+    .ad-space { background: var(--card); border: 1px dashed rgba(255,255,255,0.1); border-radius: 16px; padding: 1rem; text-align: center; max-width: 900px; margin: 3rem auto; min-height: 120px; overflow: hidden; }
+    .ad-space-label { font-size: .65rem; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; margin-bottom: .5rem; }
+    .version-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(37,244,238,.08); border: 1px solid rgba(37,244,238,.2); color: var(--accent2); border-radius: 100px; padding: .3rem .9rem; font-size: .8rem; font-weight: 700; margin-bottom: 1rem; }
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 1.5rem; text-align: center; color: var(--muted); font-size: .88rem; }
     footer a { color: var(--muted); text-decoration: none; transition: color .2s; }
     footer a:hover { color: var(--text); }
     .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-top: .8rem; }
-
-    /* ── ANIMATIONS ── */
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      .nav-links { display: none; }
-      .hero h1 { font-size: 2rem; }
-    }
+    @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 600px) { .nav-links { display: none; } .hero h1 { font-size: 2rem; } }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">
-      <div class="logo-icon">⬇️</div>
-      HubSave
-    </a>
+    <a href="#" class="nav-logo"><div class="logo-icon">⬇️</div> HubSave</a>
     <a href="../index.html" style="margin-left:auto; margin-right:1rem; border:1px solid #fe2c55; padding:0.3rem 0.8rem; border-radius:8px; color:#fff; text-decoration:none;">العربية</a>
     <div class="nav-links">
       <a href="#features">Features</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact Us</a>
-      <a href="https://github.com/uot2/HubSave-App/releases/download/v1.0/app-release.apk" class="nav-cta">Free Download</a>
+      <a href="https://github.com/uot2/HubSave-App/releases/latest/download/app-release.apk" class="nav-cta">Free Download</a>
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="hero-badge">⚡ Fastest & Lightest on Android</div>
-      <div class="version-badge">📦 Version 1.0 — Last Updated: May 2025</div>
-      <h1>Download Videos <span>TikTok</span><br/>Without Watermark</h1>
-      <p class="hero-sub">أسرع وأسهل طريقة لتحميل فيديوهات وصوتيات TikTok بHigh Quality مجاناً لأجهزة Android</p>
+      <div class="version-badge">📦 Version 2.2 — Last Updated: May 2026</div>
+      <h1>Download Your <span>Favorite Videos</span><br/>Without Watermark</h1>
+      <p class="hero-sub">The fastest and easiest way to download videos and audio from social media in high quality for free on Android</p>
       <div class="hero-btns">
-        <a href="https://github.com/uot2/HubSave-App/releases/download/v1.0/app-release.apk"
-           id="btn-download-hero"
-           class="btn-primary"
-           onclick="gtag('event','apk_download',{'event_category':'engagement'});">
-          ⬇️ Free Download — APK مباشر
-        </a>
-        <a href="#features" class="btn-secondary">🎯 اكتشف Features</a>
+        <a href="https://github.com/uot2/HubSave-App/releases/latest/download/app-release.apk" id="btn-download-hero" class="btn-primary" onclick="gtag('event','apk_download',{'event_category':'engagement'});">⬇️ Free Download — Direct APK</a>
+        <a href="#features" class="btn-secondary">🎯 Discover Features</a>
       </div>
-
       <div class="hero-phone">
-        <div class="phone-frame">
-          <div class="phone-notch"></div>
+        <div class="phone-frame"><div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="phone-header">
-              <div class="phone-logo">HubSave</div>
-              <div class="phone-icon"></div>
-            </div>
-            <div class="phone-input">الصق رابط TikTok هنا...</div>
-            <div class="phone-btn">⚡ Check Link</div>
+            <div class="phone-header"><div class="phone-logo">HubSave</div><div class="phone-icon"></div></div>
+            <div class="phone-input">Paste video link here...</div>
+            <div class="phone-btn">⚡ Analyze Link</div>
             <div class="phone-video">🎬</div>
-            <div class="phone-tabs">
-              <div class="phone-tab active">Home</div>
-              <div class="phone-tab">Favorites</div>
-              <div class="phone-tab">History</div>
-            </div>
+            <div class="phone-tabs"><div class="phone-tab active">Home</div><div class="phone-tab">Favorites</div><div class="phone-tab">History</div></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
   <div class="stats-section">
     <div class="stats-grid">
-      <div>
-        <div class="stat-num">100%</div>
-        <div class="stat-label">100% Free</div>
-      </div>
-      <div>
-        <div class="stat-num">HD</div>
-        <div class="stat-label">High Quality</div>
-      </div>
-      <div>
-        <div class="stat-num">0</div>
-        <div class="stat-label">علامة مائية</div>
-      </div>
-      <div>
-        <div class="stat-num">Android</div>
-        <div class="stat-label">Device Compatible</div>
-      </div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Completely Free</div></div>
+      <div><div class="stat-num">HD</div><div class="stat-label">High Quality</div></div>
+      <div><div class="stat-num">0</div><div class="stat-label">No Watermark</div></div>
+      <div><div class="stat-num">Android</div><div class="stat-label">Device Compatible</div></div>
     </div>
   </div>
 
-  <!-- إعلان رقم 1 -->
-  <div class="ad-space">
-    <div class="ad-space-label">إعلان مدعوم</div>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6047567977712893"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <div class="ad-space"><div class="ad-space-label">Sponsored Ad</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6047567977712893" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
-  <!-- FEATURES -->
   <section class="section" id="features">
     <div class="section-label">✨ Features</div>
     <h2 class="section-title">Everything You Need in One App</h2>
-    <p class="section-sub">HubSave مصمم ليعطيك أفضل تجربة تحميل ممكنة بدون تعقيدات</p>
+    <p class="section-sub">HubSave is designed to give you the best download experience without complications</p>
     <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon fi-red">🚀</div>
-        <h3>Instant 1-Click Download</h3>
-        <p>Copy Link، افتح التطبيق، وسيتم اللصق تلقائياً. ثم اضغط تحميل — الأمر هكذا!</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon fi-cyan">💎</div>
-        <h3>Without Watermark</h3>
-        <p>احصل على الفيديو نظيفاً بالكامل بدون شعار TikTok أو أي علامات أخرى</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon fi-purple">🎵</div>
-        <h3>Extract MP3 Audio</h3>
-        <p>حمّل الصوت فقط من أي فيديو بتنسيق MP3 بأعلى جودة متاحة</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon fi-green">📚</div>
-        <h3>Smart Library</h3>
-        <p>سجل تحميلاتك، أضف للمفضلة، وشاهد الفيديوهات مباشرة داخل التطبيق</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon fi-red">🌙</div>
-        <h3>True Black Dark Mode</h3>
-        <p>تصميم AMOLED True Black يريح عينيك ويوفر بطارية جهازك</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon fi-cyan">🌍</div>
-        <h3>Arabic & English</h3>
-        <p>التطبيق يدعم اللغتين العربية والإنجليزية بشكل كامل مع دعم RTL</p>
-      </div>
+      <div class="feature-card"><div class="feature-icon fi-red">🚀</div><h3>Instant 1-Click Download</h3><p>Copy the link, open the app, and it auto-pastes. Then tap download — that's it!</p></div>
+      <div class="feature-card"><div class="feature-icon fi-cyan">💎</div><h3>Without Watermark</h3><p>Get the video completely clean without any annoying logos or watermarks</p></div>
+      <div class="feature-card"><div class="feature-icon fi-purple">🎵</div><h3>Extract MP3 Audio</h3><p>Download audio only from any video in MP3 format at the highest available quality</p></div>
+      <div class="feature-card"><div class="feature-icon fi-green">📚</div><h3>Smart Library</h3><p>Track your downloads, add to favorites, and watch videos directly inside the app</p></div>
+      <div class="feature-card"><div class="feature-icon fi-red">🌙</div><h3>True Black Dark Mode</h3><p>AMOLED True Black design that's easy on your eyes and saves battery life</p></div>
+      <div class="feature-card"><div class="feature-icon fi-cyan">🌍</div><h3>Arabic & English</h3><p>Full support for both Arabic and English languages with complete RTL support</p></div>
     </div>
   </section>
 
-  <!-- إعلان رقم 2 -->
-  <div class="ad-space">
-    <div class="ad-space-label">إعلان مدعوم</div>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6047567977712893"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <div class="ad-space"><div class="ad-space-label">Sponsored Ad</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6047567977712893" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
-  <!-- HOW IT WORKS -->
   <section class="section" id="how">
     <div class="section-label">📖 How It Works</div>
     <h2 class="section-title">Just 3 Steps</h2>
-    <p class="section-sub">أسهل طريقة لتحميل فيديوهات TikTok على هاتفك</p>
+    <p class="section-sub">The easiest way to download videos to your phone</p>
     <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">١</div>
-        <h3>Copy Link</h3>
-        <p>افتح TikTok، اختر الفيديو الذي تريد، ثم اضغط "مشاركة" وCopy Link</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">٢</div>
-        <h3>Open HubSave</h3>
-        <p>افتح التطبيق وسيتم لصق الرابط تلقائياً. اضغط "Check Link"</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">٣</div>
-        <h3>Select & Download</h3>
-        <p>اختر تحميل الفيديو أو الصوت، وسيتم الحفظ تلقائياً في مكتبتك</p>
-      </div>
+      <div class="step-card"><div class="step-num">1</div><h3>Copy Link</h3><p>Open the app, choose the video you want, then click "Share" and copy the link</p></div>
+      <div class="step-card"><div class="step-num">2</div><h3>Open HubSave</h3><p>Open the app and the link will be pasted automatically. Tap "Analyze Link"</p></div>
+      <div class="step-card"><div class="step-num">3</div><h3>Select & Download</h3><p>Choose to download video or audio, and it will be saved automatically to your library</p></div>
     </div>
   </section>
 
-  <!-- إعلان رقم 3 -->
-  <div class="ad-space">
-    <div class="ad-space-label">إعلان مدعوم</div>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-6047567977712893"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <div class="ad-space"><div class="ad-space-label">Sponsored Ad</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6047567977712893" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 
-  <!-- BLOG PREVIEW -->
   <section class="section" id="blog-preview">
     <div class="section-label">📚 Blog</div>
     <h2 class="section-title">Latest Tech Articles</h2>
-    <p class="section-sub">اكتشف أسرار صناعة المحتوى ونصائح استخدام التطبيق</p>
+    <p class="section-sub">Discover content creation tips and app usage guides</p>
     <div class="steps-grid">
-      <div class="step-card" style="text-align: right; padding: 1.5rem;">
-        <h3 style="margin-bottom: 1rem;"><a href="article-1.html" style="color: var(--text); text-decoration: none;">تحميل فيديوهات TikTok Without Watermark</a></h3>
-        <p style="margin-bottom: 1rem;">الدليل الشامل لكيفية تحميل وتنزيل مقاطع الفيديو بHigh Quality...</p>
-        <a href="article-1.html" style="color: var(--accent2); text-decoration: none; font-size: .9rem;">اقرأ المزيد ←</a>
+      <div class="step-card" style="text-align: left; padding: 1.5rem;">
+        <h3 style="margin-bottom: 1rem;"><a href="article-1.html" style="color: var(--text); text-decoration: none;">Download Videos Without Watermark</a></h3>
+        <p style="margin-bottom: 1rem;">The complete guide to downloading videos in high quality...</p>
+        <a href="article-1.html" style="color: var(--accent2); text-decoration: none; font-size: .9rem;">Read More →</a>
       </div>
-      <div class="step-card" style="text-align: right; padding: 1.5rem;">
-        <h3 style="margin-bottom: 1rem;"><a href="article-2.html" style="color: var(--text); text-decoration: none;">5 أفكار لصناعة محتوى ناجح في 2025</a></h3>
-        <p style="margin-bottom: 1rem;">أفضل الاستراتيجيات لزيادة المشاهدات والمتابعين على TikTok...</p>
-        <a href="article-2.html" style="color: var(--accent2); text-decoration: none; font-size: .9rem;">اقرأ المزيد ←</a>
+      <div class="step-card" style="text-align: left; padding: 1.5rem;">
+        <h3 style="margin-bottom: 1rem;"><a href="article-2.html" style="color: var(--text); text-decoration: none;">5 Ideas for Successful Content in 2026</a></h3>
+        <p style="margin-bottom: 1rem;">Best strategies to increase views and followers on social media...</p>
+        <a href="article-2.html" style="color: var(--accent2); text-decoration: none; font-size: .9rem;">Read More →</a>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="blog.html" class="btn-secondary">Browse All Articles</a>
-    </div>
+    <div style="text-align: center; margin-top: 2rem;"><a href="blog.html" class="btn-secondary">Browse All Articles</a></div>
   </section>
 
-  <!-- CTA -->
   <section class="cta-section" id="download">
     <div class="cta-bg"></div>
     <h2>Ready to Start? 🚀</h2>
-    <p>حمّل HubSave الآن مجاناً لجهاز Android الخاص بك</p>
-    <a href="https://github.com/uot2/HubSave-App/releases/download/v1.0/app-release.apk"
-       id="btn-download-cta"
-       class="btn-primary"
-       style="font-size:1.15rem; padding: 1rem 2.5rem;"
-       onclick="gtag('event','apk_download',{'event_category':'engagement'});">
-      ⬇️ تحميل HubSave مجاناً — APK مباشر
-    </a>
-    <p style="margin-top:1.2rem; font-size:.85rem; color: var(--muted);">
-      متوافق مع Android 7.0 وما فوق • حجم التطبيق أقل من 10 ميغابايت
-    </p>
+    <p>Download HubSave now for free on your Android device</p>
+    <a href="https://github.com/uot2/HubSave-App/releases/latest/download/app-release.apk" id="btn-download-cta" class="btn-primary" style="font-size:1.15rem; padding: 1rem 2.5rem;" onclick="gtag('event','apk_download',{'event_category':'engagement'});">⬇️ Download HubSave Free — Direct APK</a>
+    <p style="margin-top:1.2rem; font-size:.85rem; color: var(--muted);">Compatible with Android 7.0+ • App size less than 15 MB</p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div>© 2026 HubSave. All Rights Reserved.</div>
     <div class="footer-links">
@@ -699,8 +218,3 @@
 
 </body>
 </html>
-
-
-
-
-

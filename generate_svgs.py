@@ -1,0 +1,61 @@
+import os
+
+os.makedirs('images', exist_ok=True)
+
+def generate_share_svg(platform_name, accent_color):
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" width="100%" height="100%">
+  <rect width="400" height="800" fill="#111" rx="20"/>
+  <!-- Placeholder Video BG -->
+  <rect x="0" y="0" width="400" height="800" fill="#222" rx="20"/>
+  
+  <!-- Right side icons -->
+  <circle cx="350" cy="400" r="22" fill="#333" opacity="0.8"/>
+  <circle cx="350" cy="470" r="22" fill="#333" opacity="0.8"/>
+  <circle cx="350" cy="540" r="22" fill="#333" opacity="0.8"/>
+  <circle cx="350" cy="610" r="22" fill="{accent_color}" opacity="0.9"/>
+  <path d="M342 605 h12 v4 h-8 v8 h-4 z M356 615 h-12 v-4 h8 v-8 h4 z" fill="#fff"/>
+  
+  <!-- Overlay Dark -->
+  <rect x="0" y="0" width="400" height="800" fill="#000" opacity="0.4" rx="20"/>
+  
+  <!-- Bottom Sheet -->
+  <rect x="0" y="500" width="400" height="300" fill="#1e1e1e" rx="20"/>
+  <rect x="175" y="515" width="50" height="5" fill="#444" rx="2.5"/>
+  <text x="200" y="550" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">إرسال إلى ({platform_name})</text>
+  
+  <!-- First row of circles -->
+  <circle cx="60" cy="610" r="28" fill="#333"/>
+  <circle cx="153" cy="610" r="28" fill="#333"/>
+  <circle cx="246" cy="610" r="28" fill="#333"/>
+  <circle cx="340" cy="610" r="28" fill="#333"/>
+  
+  <!-- Second row (Actions) -->
+  <circle cx="60" cy="710" r="25" fill="#333"/>
+  <!-- Copy Link highlighted -->
+  <circle cx="153" cy="710" r="25" fill="{accent_color}"/>
+  <!-- Link Icon -->
+  <path d="M145 705 a5 5 0 0 0 0 10 h4 v-2 h-4 a3 3 0 0 1 0 -6 h4 v-2 z M157 705 h-4 v2 h4 a3 3 0 0 1 0 6 h-4 v2 h4 a5 5 0 0 0 0 -10 z M148 709 h10 v2 h-10 z" fill="#fff"/>
+  <text x="153" y="755" fill="#fff" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">نسخ الرابط</text>
+  
+  <circle cx="246" cy="710" r="25" fill="#333"/>
+  <circle cx="340" cy="710" r="25" fill="#333"/>
+  
+  <!-- Pointer Hand Icon over Copy Link -->
+  <path d="M165 735 l-5 -15 l-10 10 l3 18 z" fill="#fff" stroke="#000" stroke-width="1"/>
+  <circle cx="153" cy="710" r="30" fill="none" stroke="{accent_color}" stroke-width="3" stroke-dasharray="5,5"/>
+</svg>"""
+
+platforms = {
+    'tiktok': ('تيك توك', '#fe2c55'),
+    'facebook': ('فيسبوك', '#1877f2'),
+    'instagram': ('إنستغرام', '#e1306c'),
+    'youtube': ('يوتيوب', '#ff0000'),
+    'twitter': ('تويتر X', '#1da1f2'),
+    'generic': ('منصة', '#25f4ee')
+}
+
+for key, (name, color) in platforms.items():
+    with open(f'images/step1-{key}.svg', 'w', encoding='utf-8') as f:
+        f.write(generate_share_svg(name, color))
+
+print("Platform specific SVGs created.")
