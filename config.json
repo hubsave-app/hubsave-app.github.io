@@ -1,0 +1,102 @@
+{
+  "_comment_1": "==========================================================================",
+  "_comment_2": "HubSave Application Remote Configuration File",
+  "_comment_3": "This file is hosted on GitHub and read by the app on every startup.",
+  "_comment_4": "You can change URLs, enable/disable ads, and update ad IDs here dynamically.",
+  "_comment_5": "==========================================================================",
+  "app_control": {
+    "_description": "Controls app availability, maintenance messages, and update popups",
+    "is_active": true,
+    "latest_version": 5,
+    "update_url": "https://hubsave-app.github.io/",
+    "message": "Welcome to HubSave! A new update is available. Please update to enjoy the fastest download speeds and premium features."
+  },
+  "multi_platform_apis": {
+    "_description": "Dynamic multi-platform video download APIs. The app detects the platform from URL and routes to the best API.",
+    "_description_routing": "Smart routing: detects platform first → tries platform-specific API → falls back to general APIs → falls back to YoutubeDL engine.",
+    "api_1": {
+      "_description": "Primary Universal API (Cobalt Community - 100% success rate) - supports ALL platforms: YouTube, Instagram, TikTok, Facebook, X/Twitter, Pinterest, Snapchat, Reddit, Twitch and more",
+      "url": "https://cobalt.meowing.de/",
+      "enabled": true
+    },
+    "api_2": {
+      "_description": "Backup Universal API (Cobalt Community #2) - fallback for all platforms if api_1 fails",
+      "url": "https://cobalt.clxxped.lol/",
+      "enabled": true
+    },
+    "api_3": {
+      "_description": "Official Cobalt API - third fallback for general downloads",
+      "url": "https://api.cobalt.tools/",
+      "enabled": true
+    },
+    "api_4": {
+      "_description": "Stories API (Instagram/Facebook/Snapchat Stories) - Cobalt with high success rate for stories content",
+      "url": "https://cobalt.kittycat.boo/",
+      "enabled": true
+    },
+    "api_5": {
+      "_description": "Snapchat API (no watermark) - specialized for Snapchat Spotlight/Stories with disableMetadata support",
+      "url": "https://cobalt.squair.xyz/",
+      "enabled": true
+    },
+    "api_6": {
+      "_description": "X/Twitter API - specialized for X/Twitter videos from all accounts including unverified, with twitterGif support",
+      "url": "https://dl.woof.monster/",
+      "enabled": true
+    },
+    "api_7": {
+      "_description": "Pinterest API - specialized for Pinterest videos/images/stories download",
+      "url": "https://cobalt.canine.tools/",
+      "enabled": true
+    },
+    "api_8": {
+      "_description": "TikTok Primary API (Lovetik) - TikTok-specific, no watermark",
+      "url": "https://lovetik.com/api/ajax/search",
+      "enabled": true
+    },
+    "api_9": {
+      "_description": "TikTok Backup API (TikWM) - TikTok HD and no watermark backup",
+      "url": "https://www.tikwm.com/api/",
+      "enabled": true
+    }
+  },
+  "quality_options": {
+    "_description": "Available video quality levels shown to user. The app will try each quality from highest to lowest and show only available ones.",
+    "available_qualities": [
+      "4320",
+      "2160",
+      "1440",
+      "1080",
+      "720",
+      "480",
+      "360",
+      "240",
+      "144"
+    ],
+    "default_quality": "1080"
+  },
+  "ads": {
+    "_description": "AdMob advertisement units and controls. Set enabled to true (on) or false (off).",
+    "_description_ad_units": "You can change the ad_unit_id here to switch your ad accounts or units instantly without compiling a new APK.",
+    "banner": {
+      "_description": "Standard Banner Ad displayed at the bottom of the home screen",
+      "enabled": false,
+      "ad_unit_id": "ca-app-pub-6047567977712893/8198444436"
+    },
+    "interstitial_main": {
+      "_description": "Fullscreen Interstitial Ad shown after 3 app launches, and after a video successfully downloads",
+      "enabled": false,
+      "ad_unit_id": "ca-app-pub-6047567977712893/2014190368"
+    },
+    "interstitial_player": {
+      "_description": "Fullscreen Interstitial Ad shown every 2nd video player open and every 5 video swipes",
+      "enabled": false,
+      "ad_unit_id": "ca-app-pub-6047567977712893/5798588365"
+    },
+    "rewarded": {
+      "_description": "Rewarded Video Ad (currently unused - reserved for future implementation)",
+      "enabled": false,
+      "ad_unit_id": "ca-app-pub-6047567977712893/9422830537"
+    }
+  }
+}

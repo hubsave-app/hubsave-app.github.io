@@ -131,6 +131,15 @@
       font-size: .9rem;
       color: var(--accent2);
     }
+    .warning-box {
+      background: rgba(254,44,85,.05);
+      border: 1px solid rgba(254,44,85,.2);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin-top: 1rem;
+      font-size: .9rem;
+      color: var(--accent);
+    }
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem 1.5rem;
@@ -165,24 +174,64 @@
     </div>
 
     <div class="policy-section">
-      <h2><span class="icon">📊</span> Data We Collect</h2>
-      <p>The app collects only the minimum data necessary to improve the experience:</p>
+      <h2><span class="icon">🔍</span> Information We Collect</h2>
+      <p>We are fully transparent about all information collected while using the app:</p>
+      
+      <p style="margin-top:1rem;"><strong>1. Device Information (Automatic & Anonymous):</strong></p>
       <ul>
-        <li><strong>Usage Data (Analytics):</strong> Via Firebase Analytics, we collect anonymous data such as app open count, pages visited, and selected language.</li>
-        <li><strong>Crash Data (Crashlytics):</strong> If an error occurs, an anonymous technical report is sent to help us fix it.</li>
-        <li><strong>Ads:</strong> We use Google AdMob which may collect data for ads according to Google's privacy policy.</li>
+        <li>Device type and model (e.g., Samsung Galaxy S23)</li>
+        <li>Operating system and version number (e.g., Android 14)</li>
+        <li>Screen resolution and device language</li>
+        <li>Advertising ID - you can reset this from your device settings</li>
       </ul>
+
+      <p style="margin-top:1rem;"><strong>2. Usage Data (Firebase Analytics):</strong></p>
+      <ul>
+        <li>Number of app opens and session duration</li>
+        <li>Pages and features used within the app</li>
+        <li>Number of videos downloaded (without saving video URLs)</li>
+        <li>Source platform (YouTube, TikTok, etc.) - for statistical purposes only</li>
+      </ul>
+
+      <p style="margin-top:1rem;"><strong>3. Crash Reports (Firebase Crashlytics):</strong></p>
+      <ul>
+        <li>If a crash or unexpected error occurs, an anonymous technical report is sent</li>
+        <li>Reports include: error type, code path, memory state - and do NOT include any personal data</li>
+      </ul>
+
+      <p style="margin-top:1rem;"><strong>4. Advertising Data (Google AdMob):</strong></p>
+      <ul>
+        <li>The app uses Google AdMob which may collect data for personalized advertising</li>
+        <li>This includes: Advertising ID, ad interaction data, and basic device information</li>
+        <li>This data is fully managed by Google in accordance with their privacy policy</li>
+      </ul>
+
       <div class="highlight-box">
-        ✅ <strong>We do not collect</strong> any personal information such as name, email, phone number, or location.
+        ✅ <strong>We NEVER collect:</strong> Real name, email address, phone number, GPS location, contacts, photos, messages, or any personal content from your device.
       </div>
     </div>
 
     <div class="policy-section">
-      <h2><span class="icon">🔒</span> How We Use Data</h2>
+      <h2><span class="icon">📊</span> How We Use Data</h2>
       <ul>
-        <li>Improving app performance and fixing bugs</li>
-        <li>Analyzing feature usage to improve the app</li>
-        <li>Displaying relevant ads via Google AdMob</li>
+        <li>Improving app performance and download speed</li>
+        <li>Discovering and fixing technical bugs in future updates</li>
+        <li>Understanding which platforms and features are most used to improve them</li>
+        <li>Displaying ads via Google AdMob (when enabled)</li>
+      </ul>
+      <div class="highlight-box">
+        🔒 <strong>We never sell any data</strong> to any third party and do not share your data with anyone except the Google services mentioned above.
+      </div>
+    </div>
+
+    <div class="policy-section">
+      <h2><span class="icon">🔑</span> Required Permissions</h2>
+      <p>The app requests the following permissions for specific and necessary purposes only:</p>
+      <ul>
+        <li><strong>Internet:</strong> To download videos and fetch data from servers</li>
+        <li><strong>Storage:</strong> To save downloaded videos to your Downloads folder</li>
+        <li><strong>Notifications:</strong> To show download progress and completion notifications</li>
+        <li><strong>Background Service:</strong> To continue downloads when leaving the app</li>
       </ul>
     </div>
 
@@ -195,7 +244,7 @@
         <li>App settings (language, dark mode)</li>
       </ul>
       <div class="highlight-box">
-        🔐 This data is never sent to any external server and remains on your device only.
+        🔐 This data is never sent to any external server and remains on your device only. Uninstalling the app deletes all this data.
       </div>
     </div>
 
@@ -208,6 +257,9 @@
         <li>You agree that you are fully legally responsible for any content you download and store.</li>
         <li>Using this tool to download others' content and republish it without the original owner's permission is prohibited.</li>
       </ul>
+      <div class="warning-box">
+        ⚠️ <strong>Warning:</strong> Any use that violates copyright is your full personal responsibility. The developer assumes no responsibility for misuse.
+      </div>
     </div>
 
     <div class="policy-section">
@@ -223,7 +275,8 @@
       <h2><span class="icon">🛡️</span> User Rights</h2>
       <ul>
         <li>You can delete all local data by uninstalling the app</li>
-        <li>You can disable ad tracking from your device settings</li>
+        <li>You can disable ad tracking from your device settings (Settings → Privacy → Advertising)</li>
+        <li>You can reset your Advertising ID at any time</li>
         <li>The app does not share your data with any third party except the services mentioned above</li>
       </ul>
     </div>
@@ -263,8 +316,3 @@
 
 </body>
 </html>
-
-
-
-
-
